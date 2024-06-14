@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            border: 1px solid rgb(13, 7, 12);
+            background-image: linear-gradient(to bottom right,rgb(193, 22, 148),rgb(233, 168, 221));
+            width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .box1{
+            border: 1px solid black;
+            background-color:rgb(240, 238, 236);
+            width: 500px;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .reg-btn{
+            padding: 10px 175px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1><center>Registration Form</center></h1>
+        <div class="box1">
+    <form action="_demo.asp" taret="_blank" method="get">
+        
+       <p> Name: <input type="text"  id="Name" placeholder="your name"></p>
+       <p> Email: <input type="text"  id="Email" placeholder="your email"></p>
+        <p>Password:  <input type="password" name="" id="password"></p>
+        <p>Gender:  <label for="Male">Male: </label><input type="radio" value="male" id="Male">
+                    <label for="Female">Female: </label><input type="radio" value="female" id="Female">
+                    <label for="Other">Other</label><input type="radio" value="other" id="Other"></p>
+
+        <p>language: <select name="language" id="language">
+                <option value="select language">Select language</option>
+                <option value="Telugu">Telugu</option>
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                </select></p>
+        <p>Zip Code: <input type="number" value="number" ></p>
+        <p><label for="About">About: </label><textarea name="About" id="About" cols="10" rows="10">Write about yourself...</textarea></p>
+        <p><center><button type="Register" class="reg-btn">Register</button></center></p>
+        <p></p>
+    </form>
+    </div>
+    </div>
+</body>
+</html>

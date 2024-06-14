@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+      .login-form {
+            width: 400px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color:rgb(93, 202, 242);
+        }
+
+      .login-form img.profile{
+            width: 100%;
+            height: 200px;
+            margin-bottom: 10px;
+            position: relative; 
+        }
+
+      .login-form img.arrow {
+            width: 60px;
+            height: 80px;
+            position: absolute;
+            top: 30px;
+            right: 400px;
+        }
+
+      .form-group {
+            margin-bottom: 10px;
+        }
+
+      .form-control {
+            width: 90%;
+            height: 40px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+        }
+
+      .form-control::placeholder {
+            color: #999;
+        }
+
+      .login-btn {
+            background-color: #34C759;
+            color: #fff;
+            padding: 10px 175px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+
+      .login-btn:hover {
+            background-color: #2ECC40;
+        }
+
+      .remember-me {
+            margin-left: 10px;
+        }
+      .cancel-btn {
+            background-color: #FF3737;
+            color: #fff;
+            padding: 10px 50px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+      .cancel-btn:hover {
+            background-color: #FF0000;
+        }
+
+      .forgot-pwd {
+            float: right;
+            margin-top: 5px;
+            font-size: 14px;
+            color: #666;
+            text-decoration: none;
+        }
+
+      .forgot-pwd:hover {
+            color: #333;
+        }
+
+        .arrow {
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 10px;
+			right: 20px;
+		}
+    </style>
+</head>
+<body>
+    <div class="login-form">
+        <img src="profile.png" alt="profile" class="profile">
+       
+        <form>
+            <img src="arrow.png" alt="Arrow" class="arrow">
+            <div class="form-group">
+                <h2>Username</h2>
+                <input type="text" class="form-control" placeholder="Enter username" required>
+            </div>
+            <div class="form-group">
+                <h2>Password</h2>
+                <input type="password" class="form-control" placeholder="Enter password" required>
+            </div>
+            <button class="login-btn">Login</button>
+            <div class="form-group">
+                <input type="checkbox" id="remember-me" class="remember-me">
+                <label for="remember-me">Remember me</label>
+                
+            </div>
+            
+            <button class="cancel-btn">Cancel</button>
+            
+            <a href="#" class="forgot-pwd">Forgot password?</a>
+        </form>
+    </div>
+</body>
+</html>
